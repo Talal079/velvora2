@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvora - تيشرتات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Velvora</h1>
+        <input type="text" id="search" placeholder="ابحث عن تيشيرت..." onkeyup="searchProducts()">
+    </header>
+
+    <a href="cart.html" class="cart-floating-icon" title="سلة المشتريات">
+        🛒 (<span id="cart-count">0</span>)
+    </a>
+    
+    <main>
+        <div id="product-container" class="grid-container"></div>
+    </main>
+
+    <footer>
+        &copy; 2025 Velvora - جميع الحقوق محفوظة
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

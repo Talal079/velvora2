@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvora - سلة المشتريات</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>🛒 سلة المشتريات</h1>
+        <a href="index.html" class="back-link">العودة للمنتجات</a>
+    </header>
+
+    <main>
+        <div id="cart-items" class="grid-container">
+            </div>
+
+        <div id="cart-summary">
+            <h3>ملخص الطلب</h3>
+            <p>إجمالي المنتجات: <span id="total-items">0</span></p>
+            <p>الإجمالي (80 دينار للمنتج الواحد): <span id="total-price">0</span> دينار</p>
+            <button id="checkout-button" onclick="checkout()" disabled>إتمام الطلب عبر واتساب</button>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 Velvora - جميع الحقوق محفوظة
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // تشغيل عرض محتويات السلة عند تحميل الصفحة
+        document.addEventListener("DOMContentLoaded", () => displayCart());
+    </script>
+</body>
+</html>
